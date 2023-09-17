@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+    <script src="https://kit.fontawesome.com/eb4c12c92e.js" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+</style>
+<body>
+  <div class="main">
+    <div class="header_wrapper" style="background-color: black;">
+        <nav class="navbar navbar-expand-lg"> 
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://codingninjas-cuiet.in/static/media/favicon.490b44367b85c83e6ebd.png" width="100px" height="100px" class="img-fluid" alt="logo" ></a>
+              <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about" style="color: aliceblue;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#features" style="color: aliceblue;">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pricing" style="color: aliceblue;">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#review" style="color: aliceblue;">library</a>
+                    
+                        
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#review" style="color: rgb(240, 135, 22);">Ninja's den</a>
+                            
+                                
+                                  </li>
+                          
+                  
+                </ul>
+                <ul class="navbar-nav">
+                   
+                    <li class="nav-item text-center">
+                        <a class="nav-link learn-more-btn " href="contact"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABJCAYAAACesWDiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAROSURBVHgB7ZxBaBxVGMf/35vJ7GQ322023ahpDqlWBbE10pMiGIoWPGg9CcWDUlG8CaKeFLzqWS+CF0GRXgteBKH0UGhrI60oLRXSNnVTt0k0yWZ3Zmfe85uNCUQLb2vebrbk+8Gyuy+TYffH975573tvh8AYgLJnTE15v/16o5zP60HsQGIdxsXlVr28cHU5e89SDLEcBRzyapVGruGvTKqB4DUy5gVDGMG6uJ1BpECXtNYni8vJF6W/KivAj7otqFZ5LN8Km69oog84nB5hLymr0wQawA6RZGDi7JmFxJ5S31NkPrx/7uplP2tM/OhRQ3Scj3oYRJkQn3ZU8GRRQME/LwKtzREEaM1UJt7xZ8fHc9zHDhvQAf6jgsCJBwUOlqeC0JtSXupNcMMhbt8FYQPuRxXOMU8qQ/6wBpUhbIJzc8DdaVi6lAURZEEEWRBBFkSQBRFkQQRZEEEWRJAFEWRBBFnw4QKTVZXY9QCXj7xtdq41lwbj9mTKBU4EmTSB2j2CoVePYfDwFLazxqajJhonv0P92xNwgRNB5A9wuSmAquyBP/kEv3cTmP8H02yidfFnuEJykAURZEEEWXCXLJIEemER6cwMX8l6k4NUPg913yi6ibNvYuqraJ46jeTGLHpF7uDjKBx/Hd3EnSAee8TT04jPnUcvMHEE8/LRe0dQBmVdq0fdKxNEuRy6jdNvY5IW56IUXSMX8HJMb68r7gTxQDE4eAD+g/vQLaKz56Crc2tTmx7hTJAq5BE++wzyL73IZ/XgGhPFMKuriP6ocaQm6BXuIoinF6pchrdvoitTDdNoQJV2tZc8e4kMFC2IIAsiyILby3xtHslPF7FV1J4ReHvH1gpw24wzQensTfz5yadA9tgCVCyi9N67GHrrjb7YwuVMUDaqdTGypTBEPyE5yILbAYvhgrm+y1Fu1o+U+4GlK5wKUruHoUbKdzWSTmu3Yebn+1aSU0HhkedQfPtNEBeyOsFEEepffY2lzz7n4lcB/YjbCGIx3ugoX4mGOjre1OvodyRJWxBBFkSQBRFkQQRZEEEWRJAFEWRBBFkQQRacTjXSW7cQX5jmJaDO5lW6voLWlSv/bb/Nlck7bIIyjebGayoMwazw/5+/sPkYnt8l167DFXRz7KGnU48+5tWU57FFsg+XLQl3jFIsc6jj89BgftOSkl5euuNpaSBwUXjTCuZLt2vzrqqKHZ5HFbv/I0nJQRZEkAURZEEEWRBBFkSQBRFkQQRZEEEWRJAFEWRBkUkWiefPawvrwjoEarCQRWUQXyOo09w0B2EDY8yCR+qsGqtWm9DJGQP9i0TRGgSsKsKZvAl/aOegvfTAZZXqjzisTvV0l3Z/ErGHE2gF75euX1rauAsexgN/JqqWvFAdU8o7qo2e5AP7a7tXF+GoifnRvgueSsNvxqqD1fW74G3eCrh/f/B7XRVNQYcqTft3Z1MX+Pd9FDP+Boj1UcobPwvEAAAAAElFTkSuQmCC"> </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <div class="box2"><div class="headertext"><h1>The World Has Enough Coder Be A Coding Ninja</h1></div>
+    <div class="subhead"><h5>Welcome to Chitkara X Coding Ninjas Kitchen, explore your potential by discovering the latest courses, interesting problems and a lot more in<br> this unique and innovative feature. Allow yourself to delve into the world of coding through our online compiler and specified resources to <br>reach for the stars in your coding journey.</h5></div><br>
+    <div class="button1"><button style="margin-left: 650px; padding: 2px; box-shadow: 10px black;">EXPLORE MORE</button></div>
+    <br><br><br>
+    
+</div>
+
+</div> 
+<div class="headingf" style="background-color: black; color: aliceblue; height: 150px; width: 100%; text-align: center; padding-top: 20px;"><h1>Coding Ninjas Learning Path</h1></div>
+<div id="feature" style="background-color: black; width: 100%; height: 270px; display: flex; justify-content: space-between;"> 
+  <div id="f1" style="background-color: rgb(58, 53, 53); width: 23%; height: 240px"><img src="https://codingninjas-cuiet.in/static/media/interviewexp.7ba9dbbc608b31f894bb.png" height="80px" width="80px" style="margin-left: 65px;"><br><span style="color: aliceblue; text-align: center; margin-left: 60px;">Interview Experience<br>
+    Real-life experiences of candidates—types of interviews, what to expect at different stages and crucial tips.</span><br> <br><button style="background-color: orange; text-align: center; margin-left: 75px;">register now</button></div>
+  <div id="f2" style="background-color:rgb(58, 53, 53); height: 240px; width: 23%;"><img src="https://codingninjas-cuiet.in/static/media/interviewbundle.d6e2d82757178348577e.png" height="80px" width="80px" style="margin-left: 65px;" ><br><span style="color: aliceblue; text-align: center; margin-left: 60px;">Interview Bundle<br>
+    Interview questions, experiences, tests and guided paths targeting popular companies like Amazon & Google.</span><br><br><button style="background-color: orange; margin-left: 75px;">register now</button></div>
+  <div id="f3" style="background-color: rgb(58, 53, 53); width: 23%; height: 240px"><img src="https://codingninjas-cuiet.in/static/media/interviewsession.e8adc5bc400801f8f6c7.png" height="80px" width="80px" style="margin-left: 65px;"><br><span style="color: aliceblue; text-align: center; margin-left: 60px;">Interview session<br>
+    Practice for interviews with people already working at your dream companies.</span><br><br><button style="background-color: orange; margin-left: 75px;">register now</button> </div>
+  <div id="f4" style="background-color: rgb(58, 53, 53); width: 23%; height :240px"><img src="https://codingninjas-cuiet.in/static/media/interviewproblems.2df4670619020b36f25b.png" height="80px" width="80px" style="margin-left: 65px;"><br><span style="color: aliceblue; text-align: center; margin-left: 60px;">Interview Problems<br>
+    Practice with real coding interview questions—filtered by companies, topics and difficulty levels.</span><br><br><button style="background-color: orange; margin-left: 75px;">register now</button>  </div>
+</div>
+<div class="hf2" style="background-color: black; width: 100%; height: 70px;"></div>
+<div id="feature" style="background-color: black; width: 100%; height: 270px; display: flex; justify-content: space-between;"> 
+  <div id="f1" style="background-color: rgb(58, 53, 53); width: 23%; height: 240px"><img src="https://codingninjas-cuiet.in/static/media/interviewexp.7ba9dbbc608b31f894bb.png" height="80px" width="80px" style="margin-left: 65px;"><br><span style="color: aliceblue; text-align: center; margin-left: 60px;">Interview Experience<br>
+    Real-life experiences of candidates—types of interviews, what to expect at different stages and crucial tips.</span> <br><br><button style="background-color: orange; text-align: center; margin-left: 75px;">register now</button></div>
+  <div id="f2" style="background-color:rgb(58, 53, 53); height: 240px; width: 23%;"><img src="https://codingninjas-cuiet.in/static/media/interviewbundle.d6e2d82757178348577e.png" height="80px" width="80px" style="margin-left: 65px;" ><br><span style="color: aliceblue; text-align: center; margin-left: 60px;">Interview Bundle<br>
+    Interview questions, experiences, tests and guided paths targeting popular companies like Amazon & Google.</span><br><br><button style="background-color: orange; margin-left: 75px;">register now</button></div>
+  <div id="f3" style="background-color: rgb(58, 53, 53); width: 23%; height: 240px"><img src="https://codingninjas-cuiet.in/static/media/interviewsession.e8adc5bc400801f8f6c7.png" height="80px" width="80px" style="margin-left: 65px;"><br><span style="color: aliceblue; text-align: center; margin-left: 60px;">Interview session<br>
+    Practice for interviews with people already working at your dream companies.</span><br><br><button style="background-color: orange; margin-left: 75px;">register now</button> </div>
+  <div id="f4" style="background-color: rgb(58, 53, 53); width: 23%; height :240px"><img src="https://codingninjas-cuiet.in/static/media/interviewproblems.2df4670619020b36f25b.png" height="80px" width="80px" style="margin-left: 65px;"><br><span style="color: aliceblue; text-align: center; margin-left: 60px;">Interview Problems<br>
+    Practice with real coding interview questions—filtered by companies, topics and difficulty levels.</span><br><br><button style="background-color: orange; margin-left: 75px;">register now</button>  </div>
+</div>
+
+<div class="hf2" style="background-color: black; width: 100%; height: 70px;"></div>
+</div>
+<div class="compiler" style="width: 100%; height: 800px; background-color: rgb(52, 50, 50);">
+<div class="container" style="width: 100%; height: 100vh; padding: 20px; display: flex;">
+  <div class="left" style="flex-basis: 50%; padding: 10px;">
+    <label style="color: aliceblue; display: flex; align-items: center; background: #000; height: 30px;"><i class="fa-brands fa-html5"></i>  HTML</label>
+    <textarea style="width: 100%;
+    height: 28%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    border:0;
+    outline: 0;
+    font-size: 18px;" id="html_code" onkeyup="run()" ></textarea>
+    <label style="color: aliceblue; display: flex; align-items: center; background: #000; height: 30px;"><i class="fa-brands fa-css3-alt" style="margin-right: 10px; margin-left: 10px;"></i> CSS</label>
+    <textarea  style="width: 100%;
+    height: 28%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    border:0;
+    outline: 0;
+    font-size: 18px;" id="css_code" onkeyup="run()"></textarea>
+    <label style="color: aliceblue; display: flex; align-items: center; background: #000; height: 30px;"><i class="fa-brands fa-js" style="margin-right: 10px; margin-left: 10px;"></i> JS</label>
+    <textarea style="width: 100%;
+    height: 28%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    border:0;
+    outline: 0;
+    font-size: 18px;" id="js_code" onkeyup="run()"></textarea>
+  </div>
+  <div class="right" style="flex-basis: 50%; padding: 10px;">
+    <label style="color: aliceblue; display: flex; align-items: center; background: #000; height: 30px;"><i class="fa-solid fa-play" style="margin-right: 10px; margin-left: 10px;"></i> output</label>
+  <iframe id="output" style="width: 100%; height: 95%; background: #fff;border: 0; outline: 0;">
+  </iframe>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="bottom" style="background-color: rgb(43, 40, 40); width: 100%; height: 300px;display: flex; justify-content: space-between;">
+<div class="b1" style="width: 50%; height 100% co; color: aliceblue;"><span ><br><br>@CodingNinjas_CUIET<br><br>
+
+  cn.cuiet@chitkara.edu.in<br>
+  Chandigarh-Patiala National Highway (NH-64), Village Jhansla, Rajpura, <br>Punjab 140401
+  <br>
+  <br>
+  
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-square-instagram"></i></span></div>
+<div class="b2" style="height: 100%; width: 25%; color: aliceblue;"><br><br>Know More<br><br>
+  About Us<br>
+  Events<br>
+  Kitchen<br></div>
+<div class="b3"style="height: 100%; width: 25%; color: aliceblue;"><br><br>Other Links<br>
+  <br>
+  Terms & Conditions<br>
+  Privacy Policy<br>
+  Contact Us<br></div>
+</div>
+
+<script>
+  function run(){
+    let htmlcode = document.getElementById("html_code").value;
+    let csscode = document.getElementById("css_code").value;
+    let jscode = document.getElementById("js_code").value;
+    let output = document.getElementById("output");
+
+    output.contentDocument.body.innerHTML= htmlcode +"<style>"+ csscode +"</style>";
+    output.contentWindow.eval(jscode);
+  }
+</script>
+
+</body>
+</html>

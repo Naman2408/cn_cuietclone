@@ -1,0 +1,24 @@
+@media (max-width: 1300px){
+    /* 2 Navbar */
+
+    .header_wrapper .menu-navbar-nav{
+        width: auto;
+    }
+}
+    
+@media (max-width:1230px){
+    /* 2 Navbar */
+    .header_wrapper .nav-item{
+        margin: 0 5px;
+    }
+    .header_wrapper .learn-more-btn{
+        padding: 12px 10px !important;
+    }
+    /* 3 Banner */
+}
+@media (max-width: 1070px){
+    /* 2 Navbar */
+
+
+    /* 5 About */
+}
